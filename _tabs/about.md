@@ -6,7 +6,7 @@ order: 4
 
 ![main](/assets/img/main.png)
 
-## <img width="40" src="https://github.com/5jisoo/5jisoo/assets/96935231/ed632e34-eb9d-47ae-990d-79f58b1e5669"/> 당신의 순간, 포착!  [![app store badge](http://img.shields.io/badge/App%20Store-4285F4?style=flat&logo=app-store&link=https://apps.apple.com/kr/app/pochak/id6502332418&logoColor=white)](https://apps.apple.com/kr/app/pochak/id6502332418)
+## 당신의 순간, 포착! 
 
 **포착**은 사용자가 자신의 사진을 직접 업로드하는 것이 아니라, 타인이 촬영한 사용자의 사진을 공유함으로써 보다 자연스러운 일상을 기록할 수 있게 하는 소셜 미디어 플랫폼입니다. 
 
