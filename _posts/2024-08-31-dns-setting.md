@@ -2,7 +2,7 @@
 title: GCP Cloud DNS를 통한 도메인 설정과 SSL 인증서 설치
 date: 2024-08-31 17:00:00 +0900
 categories: [Infra, DNS]
-tags: [backend]     # TAG names should always be lowercase
+tags: [backend, infra, dns]     # TAG names should always be lowercase
 author: lucy-oh
 ---
 

@@ -2,7 +2,7 @@
 title: 쿼리 테스팅 도구에 대해 알아보자
 date: 2024-09-29 13:45:00 +0900
 categories: [SpringBoot, Test]
-tags: [backend]     # TAG names should always be lowercase
+tags: [backend, springboot, test]     # TAG names should always be lowercase
 author: lucy-oh
 ---
 
