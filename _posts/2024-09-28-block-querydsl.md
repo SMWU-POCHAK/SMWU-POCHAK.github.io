@@ -143,7 +143,7 @@ private BooleanExpression checkLoginMemberBlockOwnerOrTaggedMember(final Long lo
 
 ## 성능 비교 및 마무리
 
-결과적으로 개선이 되긴 되었지만, 드라마틱하게 실행 시간이 줄어들진 않았습니다. [이 곳](https://smwu-pochak.github.io/posts/query-testing-tool/)에서 자세한 내용을 확인할 수 있습니다!
+결과적으로 개선이 되긴 되었지만, 드라마틱하게 실행 시간이 줄어들진 않았습니다. [이 곳](https://smwu-pochak.github.io/posts/test-query-performance/)에서 자세한 내용을 확인할 수 있습니다!
 
 또한 Querydsl 도입 이후, CustomRepository를 테스팅하는 방법을 [이 곳](ttps://smwu-pochak.github.io/posts/testing-repository/)에서 정리하였습니다!
 
@@ -213,6 +213,6 @@ inner join의 경우, 조건을 `on`과 `where` 어디에 위치시켜도 성능
 
 ## 성능 비교
 
-기존, 개선한 V1, V2 쿼리 각각의 성능 측정은 [이 글](https://smwu-pochak.github.io/posts/query-testing-tool/#2%EC%B0%A8-%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%A5%BC-%ED%95%B4%EB%B4%85%EC%8B%9C%EB%8B%A4)에서 자세히 측정하였습니다.
+기존, 개선한 V1, V2 쿼리 각각의 성능 측정은 [이 글](https://smwu-pochak.github.io/posts/test-query-performance/#2%EC%B0%A8-%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%A5%BC-%ED%95%B4%EB%B4%85%EC%8B%9C%EB%8B%A4)에서 자세히 측정하였습니다.
 
 근소하지만 성능 향상의 결과를 얻을 수 있었습니다.
