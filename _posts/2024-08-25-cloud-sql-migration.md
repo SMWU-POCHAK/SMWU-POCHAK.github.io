@@ -2,7 +2,7 @@
 title: AWS RDS에서 GCP Cloud SQL로 마이그레이션 작업
 date: 2024-08-25 18:30:00 +0900
 categories: [Infra, Database]
-tags: [backend]     # TAG names should always be lowercase
+tags: [backend, migration, cloudsql, gcp]     # TAG names should always be lowercase
 author: lucy-oh
 ---
 
