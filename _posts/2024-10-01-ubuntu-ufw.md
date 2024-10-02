@@ -1,6 +1,6 @@
 ---
 title: Ubuntu UFW 방화벽 확인하기
-date: 2024-09-29 14:30:00 +0900
+date: 2024-10-01 01:30:00 +0900
 categories: [Infra, Firewall]
 tags: [backend, infra, firewall, error]     # TAG names should always be lowercase
 author: lucy-oh
