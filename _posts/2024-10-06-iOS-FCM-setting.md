@@ -2,7 +2,7 @@
 title: iOS에서 Push Notification을 위한 환경 세팅하기 (with FCM)
 date: 2024-10-06 02:59:00 +0900
 categories: [iOS, FCM]
-tags: [iOS, Firebase, Push Notification, FCM]     # TAG names should always be lowercase
+tags: [ios, firebase, push-notification, fcm]     # TAG names should always be lowercase
 author: Suyeon
 ---
 
