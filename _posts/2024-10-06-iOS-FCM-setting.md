@@ -50,7 +50,7 @@ Certificates, Identifiers & Profiles > Keys 에 들어가서 새로운 Key 등�
 ![img](/assets/img/2024-10-06-iOS-FCM-setting/img7.png)
 
 까먹고 캡쳐를 못했는데, 알아볼 수 있는 이름을 작성(ex. Key for Push Noti) 하고, Apple Push Notification Service (APNs) 에 체크하고 넘어가서 .p8 파일을 다운받습니다.
-<span style="color:red">키 파일은 한 번 다운받은 후에는 다시 다운받지 못하므로 잘 보관해두어야 함!!</span>
+<span style="color:red">키 파일은 한 번 다운받은 후에는 다시 다운받지 못하므로 잘 보관해두어야 합니다!!!</span>
 ![img](/assets/img/2024-10-06-iOS-FCM-setting/img8.png)
 다음과 같이 키가 두 개 생겼네요.
 
@@ -85,7 +85,7 @@ Xcode에서 프로젝트를 열고, Targets > Signing & Capabilites 에서 새�
 # 4. AppDelegate 작성
 푸시 알림이 오는 앱을 사용하는 경우, 처음 앱을 다운받아 실행하면 푸시 알림에 대한 권한 동의창이 열립니다. 이 부분에 대한 구현이 필요합니다.
 
-`AppDelegate`의 `didFinishiLaunchingWithOptions` 메소드에 다음과 같은 코드를 추가해준다. `FirebaseApp.configure()`는 이미 있었던 코드고, 여기 아래에 새 코드를 추가해 주었습니다.
+`AppDelegate`의 `didFinishiLaunchingWithOptions` 메소드에 다음과 같은 코드를 추가해줍니다. `FirebaseApp.configure()`는 이미 있었던 코드고, 여기 아래에 새 코드를 추가해 주었습니다.
 
 ```swift
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -157,7 +157,7 @@ extension AppDelegate: MessagingDelegate {
 ```
 약간의 설명을 적어보면...
 
-1. ```token(completion:)```을 사용하여 직접 토큰을 가져올 수 있습니다. 이 메소드를 통해 토큰을 따로 저장하지 않고도 토큰에 액세스할 수 있다고 하는데, 저장하는게 속편할 것 같습니다. 더 찾아볼 예정인데.. 아마 Keychain에 저장하지 않을까 싶네요.
+1. ```token(completion:)```을 사용하여 직접 토큰을 가져올 수 있습니다. 이 메소드를 통해 토큰을 따로 저장하지 않고도 토큰에 액세스할 수 있다고 하는데, 저장하는게 속 편할 것 같습니다. 더 찾아볼 예정인데.. 아마 Keychain에 저장하지 않을까 싶네요.
 
 2. `UNUserNotificationCenterDelegate`의 `didRegisterForRemoteNotificationsWithDeviceToken`은 백그라운드에서 푸시 알림을 탭했을 때 실행되는 메소드, `willPresent` 메소드는 앱 안에 있는 상태에서 알림이 올 때를 설정합니다. 특히 `willPresent` 메소드는 구현해놓지 않으면 앱 안에 있을 때는 푸시 알림이 오지 않기 때문에, 사용자가 앱 안에서 머무르고 있을 때에도 푸시 알림이 오길 원한다면 작성해야 합니다.
 
