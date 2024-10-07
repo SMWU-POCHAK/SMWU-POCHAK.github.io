@@ -3,7 +3,7 @@ title: iOS에서 Push Notification을 위한 환경 세팅하기 (with FCM)
 date: 2024-10-06 02:59:00 +0900
 categories: [iOS, FCM]
 tags: [ios, firebase, push-notification, fcm]     # TAG names should always be lowercase
-author: Suyeon
+author: suyeon
 ---
 
 # 개요
@@ -54,7 +54,7 @@ Certificates, Identifiers & Profiles > Keys 에 들어가서 새로운 Key 등�
 ![img](/assets/img/2024-10-06-iOS-FCM-setting/img8.png)
 다음과 같이 키가 두 개 생겼네요.
 
-# 2. Xcode 프로젝트에서 세팅 변경
+## 2. Xcode 프로젝트에서 세팅 변경
 Xcode에서 프로젝트를 열고, Targets > Signing & Capabilites 에서 새로운 Capability를 추가해줍니다.
 ![img](/assets/img/2024-10-06-iOS-FCM-setting/img9.png)
 
@@ -64,7 +64,7 @@ Xcode에서 프로젝트를 열고, Targets > Signing & Capabilites 에서 새�
 그러면 Background Mode 와 관련된 상세한 모드?를 선택할 수 있는데 `Remote notifications`를 선택해줍니다.
 ![img](/assets/img/2024-10-06-iOS-FCM-setting/img11.png)
 
-# 3. Firebase 프로젝트에 APN key 등록
+## 3. Firebase 프로젝트에 APN key 등록
 
 프로젝트 개요 > 설정 버튼 > 프로젝트 설정 클릭
 ![img](/assets/img/2024-10-06-iOS-FCM-setting/img12.png)
@@ -82,7 +82,7 @@ Xcode에서 프로젝트를 열고, Targets > Signing & Capabilites 에서 새�
 
 여기까지 하면 기본적인 환경 설정은 모두 완료되었습니다!
 
-# 4. AppDelegate 작성
+## 4. AppDelegate 작성
 푸시 알림이 오는 앱을 사용하는 경우, 처음 앱을 다운받아 실행하면 푸시 알림에 대한 권한 동의창이 열립니다. 이 부분에 대한 구현이 필요합니다.
 
 `AppDelegate`의 `didFinishiLaunchingWithOptions` 메소드에 다음과 같은 코드를 추가해줍니다. `FirebaseApp.configure()`는 이미 있었던 코드고, 여기 아래에 새 코드를 추가해 주었습니다.
@@ -165,7 +165,7 @@ extension AppDelegate: MessagingDelegate {
 
 Firebase는 예시가 잘 나와있어서 [공식 문서](https://firebase.google.com/docs/cloud-messaging/ios/client?hl=ko) 확인하면 다른 예시 코드도 확인 가능합니다!
 
-# 5. 잘 되는지 테스트해보기
+## 5. 잘 되는지 테스트해보기
 Firebase 콘솔에서 직접 테스트해볼 수도 있고, Swifty Pusher라는 것을 사용해서 푸시 알림 테스트를 해볼 수 있습니다. 저는 firebase 콘솔창에서 테스트해보았습니다.
 
 만약 firebase 콘솔창을 통해 테스트해보신다면.. (혹은 프로젝트의 서버가 따로 존재한다면)
